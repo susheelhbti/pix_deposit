@@ -1,1 +1,17 @@
-test
+About API
+
+This Rest API can be used for the PIX payment gatway integration. Their are two APIs and  1 for the token create API.  
+
+Login API
+
+This take email ID  and password and  return auth token which will be used in the other requests
+
+Curl Format
+
+curl --location --request POST 'https://api.pix.exchange/api/auth/login?email=[email]&password=[password]'
+
+
+
+
+
+
