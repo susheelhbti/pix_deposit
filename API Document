@@ -18,7 +18,7 @@ This qr code shell be presented to user and ask him to make payment. This API Ta
 
 PHP CURL FORMAT
 
-<PRE>
+ 
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
@@ -40,9 +40,18 @@ curl_setopt_array($curl, array(
 $response = curl_exec($curl);
 
 curl_close($curl);
-echo $response;</PRE>
+echo $response; 
 
 
+RESPONSE
 
-
+{
+    "status": 200,
+    "result": {
+        "address": "[BASE 64 DATA OF THE QR CODE"
+    },
+    "transactionId": "[ TRANSACTION ID GENERATED]",
+    "amount": 50,
+    "reference": "Test reference"
+}
 
